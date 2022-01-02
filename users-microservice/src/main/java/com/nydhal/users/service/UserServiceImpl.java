@@ -37,4 +37,5 @@ return roleRep.save(role);
 public User findUserByUsername(String username) {
 return userRep.findByUsername(username);
 }
+
 }

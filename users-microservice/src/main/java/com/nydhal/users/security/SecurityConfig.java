@@ -8,6 +8,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 @Autowired 
@@ -27,7 +28,11 @@ http.csrf().disable();
 http.sessionManagement().
 sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 http.authorizeRequests().antMatchers("/login").permitAll();
+http.authorizeRequests().antMatchers("/all").hasAuthority("ADMIN");
+http.authorizeRequests().anyRequest().authenticated();
 http.authorizeRequests().anyRequest().authenticated();
 http.addFilter(new JWTAuthenticationFilter (authenticationManager())) ;
+http.addFilter(new JWTAuthenticationFilter (authenticationManager())) ;
+http.addFilterBefore(new JWTAuthorizationFilter(),UsernamePasswordAuthenticationFilter.class);
 }
 }

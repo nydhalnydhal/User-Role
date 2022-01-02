@@ -49,7 +49,9 @@ roles.add(au.getAuthority());
 }); 
 String jwt = JWT.create(). 
  withSubject(springUser.getUsername()). 
-withArrayClaim("roles", roles.toArray(new String[roles.size()])). withExpiresAt(new Date(System.currentTimeMillis()+10*24*60*60*1000)). sign(Algorithm.HMAC256("nadhemb@yahoo.com")); 
+withArrayClaim("roles", roles.toArray(new String[roles.size()])).
+withExpiresAt(new Date(System.currentTimeMillis()+SecParams.EXP_TIME)). 
+sign(Algorithm.HMAC256(SecParams.SECRET )); 
 response.addHeader("Authorization", jwt);  
 } 
 }

@@ -1,0 +1,5 @@
+package com.nydhal.users.restControllers;
+
+public class UserRESTController {
+
+}
