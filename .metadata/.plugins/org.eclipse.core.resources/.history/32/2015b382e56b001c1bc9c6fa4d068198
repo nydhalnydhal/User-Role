@@ -1,0 +1,32 @@
+package com.nydhal.users.service;
+
+import com.nydhal.users.entities.Role;
+import com.nydhal.users.entities.User;
+
+public class UserServiceImpl implements UserService {
+
+	@Override
+	public User saveUser(User user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User findUserByUsername(String username) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Role addRole(Role role) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User addRoleToUser(String username, String rolename) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

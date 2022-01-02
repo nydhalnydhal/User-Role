@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=users-microservice/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.nydhal.users.service{UserService.java[UserService" modifiers="513" timestamp="1641140182853"/>
+    <typeInfo handle="=users-microservice/C:\/Users\/Nidhal\/.m2\/repository\/org\/springframework\/security\/spring-security-core\/5.3.3.RELEASE\/spring-security-core-5.3.3.RELEASE.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.security=/=/maven.artifactId=/spring-security-core=/=/maven.version=/5.3.3.RELEASE=/=/maven.scope=/compile=/&lt;org.springframework.security.core.userdetails(UserDetailsService.class[UserDetailsService" modifiers="1537" timestamp="1641138506933"/>
+    <typeInfo handle="=users-microservice/C:\/Users\/Nidhal\/.m2\/repository\/org\/springframework\/security\/spring-security-core\/5.3.3.RELEASE\/spring-security-core-5.3.3.RELEASE.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.security=/=/maven.artifactId=/spring-security-core=/=/maven.version=/5.3.3.RELEASE=/=/maven.scope=/compile=/&lt;org.springframework.security.provisioning(UserDetailsManager.class[UserDetailsManager" modifiers="1537" timestamp="1641138506933"/>
+</typeInfoHistroy>

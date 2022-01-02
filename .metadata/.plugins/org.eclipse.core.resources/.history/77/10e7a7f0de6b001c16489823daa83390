@@ -1,0 +1,5 @@
+package com.nydhal.users.entities;
+
+public class User {
+
+}

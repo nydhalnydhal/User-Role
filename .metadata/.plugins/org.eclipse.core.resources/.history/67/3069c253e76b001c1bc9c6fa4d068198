@@ -1,0 +1,5 @@
+package com.nydhal.users.service;
+
+public interface UserService {
+
+}
